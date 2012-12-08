@@ -32,6 +32,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'skammer/vim-css-color'
 Bundle 'bbommarito/vim-slim'
 Bundle 'jinfield/vim-nginx'
+Bundle 'digitaltoad/vim-jade'
 
 let g:CommandTMaxFiles=100000
 
