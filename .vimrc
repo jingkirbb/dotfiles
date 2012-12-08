@@ -81,6 +81,10 @@ set timeoutlen=250  " Time to wait after ESC (default causes an annoying delay)
 
 set guifont=Monospace\ 8
 
+if has('mac')
+  set gfn=menlo:h9
+endif
+
 if has('gui_running')
   set background=dark
 else
