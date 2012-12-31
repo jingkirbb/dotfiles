@@ -81,10 +81,10 @@ set nu  " Line numbers on
 set nowrap  " Line wrapping off
 set timeoutlen=250  " Time to wait after ESC (default causes an annoying delay)
 
-set guifont=Monospace\ 8
+set guifont=Monospace\ 9
 
 if has('mac')
-  set gfn=menlo:h9
+  set gfn=menlo:h10
 endif
 
 if has('gui_running')
