@@ -33,6 +33,7 @@ Bundle 'skammer/vim-css-color'
 Bundle 'bbommarito/vim-slim'
 Bundle 'jinfield/vim-nginx'
 Bundle 'digitaltoad/vim-jade'
+Bundle 'nono/vim-handlebars'
 
 let g:CommandTMaxFiles=100000
 
@@ -90,7 +91,7 @@ if has('gui_running')
   set background=dark
 else
   let g:solarized_termcolors=256
-  set background=light
+  set background=dark
 endif
 colorscheme solarized
 
