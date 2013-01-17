@@ -1,0 +1,29 @@
+[user]
+	name = Aaron Rutkovsky
+	email = aaron.rutkovsky@gmail.com
+	token = 322b1e65c35d6ac7d5b2fbc7d522064d
+[github "user"]
+	token = 322b1e65c35d6ac7d5b2fbc7d522064d
+
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[core]
+	editor = /usr/bin/vim
