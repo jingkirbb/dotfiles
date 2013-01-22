@@ -39,4 +39,5 @@ export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/u
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
-eval "$(rbenv init -)"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
