@@ -1,9 +1,10 @@
 [user]
 	name = Aaron Rutkovsky
 	email = aaron.rutkovsky@gmail.com
-	token = 322b1e65c35d6ac7d5b2fbc7d522064d
 [github "user"]
-	token = 322b1e65c35d6ac7d5b2fbc7d522064d
+
+[merge]
+  tool = gvimdiff
 
 [color]
   branch = auto
