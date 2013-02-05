@@ -1,6 +1,7 @@
 --smart-case
 
 --type-set=haml=.haml
+--type-set=haml=.hamlc
 --type-set=sass=.sass,.scss
 --type-set=coffee=.coffee
 --type-set=handlebars=.hbs
