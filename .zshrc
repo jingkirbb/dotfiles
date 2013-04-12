@@ -38,6 +38,6 @@ export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/u
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
 
 source $ZSH/oh-my-zsh.sh
-unsetopt correct_all
+unsetopt correct
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
