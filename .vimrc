@@ -7,11 +7,11 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'scrooloose/nerdtree'
-" Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
 " Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-haml'
-" Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-surround'
 " Bundle 'tpope/vim-unimpaired'
 " Bundle 'tpope/vim-ragtag'
 " Bundle 'tpope/vim-repeat'
@@ -29,11 +29,12 @@ Bundle 'pangloss/vim-javascript'
 " Bundle 'wincent/Command-T'
 Bundle 'scrooloose/syntastic'
 Bundle 'kchmck/vim-coffee-script'
-" Bundle 'skammer/vim-css-color'
+Bundle 'skammer/vim-css-color'
 Bundle 'jinfield/vim-nginx'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'nono/vim-handlebars'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'kien/rainbow_parentheses.vim'
 
 let g:CommandTMaxFiles=100000
 
