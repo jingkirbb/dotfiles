@@ -29,12 +29,13 @@ Bundle 'pangloss/vim-javascript'
 " Bundle 'wincent/Command-T'
 Bundle 'scrooloose/syntastic'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'skammer/vim-css-color'
-Bundle 'jinfield/vim-nginx'
+" Bundle 'skammer/vim-css-color'
+" Bundle 'jinfield/vim-nginx'
 Bundle 'digitaltoad/vim-jade'
-Bundle 'nono/vim-handlebars'
+" Bundle 'nono/vim-handlebars'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'vim-scripts/VimClojure'
 
 let g:CommandTMaxFiles=100000
 
@@ -53,14 +54,14 @@ let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
 
 " alt+n or alt+p to navigate between entries in QuickFix
-map <silent> <m-p> :cp <cr>
-map <silent> <m-n> :cn <cr>
+" map <silent> <m-p> :cp <cr>
+" map <silent> <m-n> :cn <cr>
 
-nmap <silent> <C-i> i<CR><Esc>
-nmap <silent> <C-a> a<CR><Esc>
+" nmap <silent> <C-i> i<CR><Esc>
+" nmap <silent> <C-a> a<CR><Esc>
 
 " Change which file opens after executing :Rails command
-let g:rails_default_file='config/routes.rb'
+" let g:rails_default_file='config/routes.rb'
 
 syntax enable
 syntax on
@@ -82,10 +83,10 @@ set nu  " Line numbers on
 set nowrap  " Line wrapping off
 set timeoutlen=250  " Time to wait after ESC (default causes an annoying delay)
 
-set guifont=Monospace\ 9
+set guifont=Monospace\ 11
 
 if has('mac')
-  set gfn=menlo:h10
+  set gfn=menlo:h11
 endif
 
 if has('gui_running')
@@ -124,8 +125,8 @@ set mousehide  " Hide mouse after chars typed
 set mouse=a  " Mouse in all modes
 
 " Backups & Files
-set backup                     " Enable creation of backup file.
-set backupdir=~/.vim/backups " Where backups will go.
+" set backup                     " Enable creation of backup file.
+" set backupdir=~/.vim/backups " Where backups will go.
 set directory=~/.vim/tmp     " Where temporary files will go.
 
 set wrapscan
@@ -152,7 +153,7 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%y%{fugitive#statusline()}%{exists('g:load
 set wildignore+=vendor/ruby/*,.git,tmp/*,public/system/*
 
 let g:ragtat_global_maps=1
-let g:cssColorVimDoNotMessMyUpdatetime = 1
+" let g:cssColorVimDoNotMessMyUpdatetime = 1
 
 hi PreProc guifg=red ctermfg=red guibg=grey15
 au BufRead,BufNewFile *.hamlc setf haml

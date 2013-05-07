@@ -42,3 +42,6 @@ source $ZSH/oh-my-zsh.sh
 # PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 unsetopt correct
+
+
+PATH=$PATH:$HOME/bin
