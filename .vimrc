@@ -4,6 +4,8 @@ filetype off      " Required!
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+let $GIT_SSL_NO_VERIFY = 'true'
+
 Bundle 'gmarik/vundle'
 
 Bundle 'scrooloose/nerdtree'
