@@ -34,10 +34,11 @@ Bundle 'kchmck/vim-coffee-script'
 " Bundle 'skammer/vim-css-color'
 " Bundle 'jinfield/vim-nginx'
 Bundle 'digitaltoad/vim-jade'
-" Bundle 'nono/vim-handlebars'
+Bundle 'nono/vim-handlebars'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'vim-scripts/VimClojure'
+Bundle 'kien/ctrlp.vim'
 
 let g:CommandTMaxFiles=100000
 
