@@ -39,6 +39,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'vim-scripts/VimClojure'
 Bundle 'kien/ctrlp.vim'
+Bundle 'wavded/vim-stylus'
 
 let g:CommandTMaxFiles=100000
 
