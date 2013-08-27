@@ -42,6 +42,7 @@ Bundle 'ejholmes/vim-forcedotcom'
 Bundle 'kien/rainbow_parentheses'
 
 nmap <silent> <leader>s :set spell!<CR>
+Bundle 'wavded/vim-stylus'
 
 let g:CommandTMaxFiles=100000
 

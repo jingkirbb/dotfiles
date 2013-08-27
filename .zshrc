@@ -46,3 +46,6 @@ unsetopt correct_all
 PATH=/usr/local/share/npm/bin:/Users/dabramov/groupon/util/bin:$PATH
 
 alias rake='noglob rake'
+
+
+PATH=$PATH:$HOME/bin
