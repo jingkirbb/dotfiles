@@ -31,17 +31,18 @@ alias zshconfig="vim ~/.zshrc"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git bundler)
 
-source $ZSH/oh-my-zsh.sh
-
-# Customize to your needs...
-# export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/home/aaron/.rvm/bin
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
-# source $ZSH/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
+
+export PGHOST=localhost
+
+PATH=/usr/local/bin:$HOME/bin:$PATH
 
 # PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 unsetopt correct
+unsetopt correct_all
+PATH=/usr/local/share/npm/bin:/Users/dabramov/groupon/util/bin:$PATH
 
-
-PATH=$PATH:$HOME/bin
+alias rake='noglob rake'

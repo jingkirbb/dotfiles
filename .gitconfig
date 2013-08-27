@@ -28,3 +28,4 @@
   untracked = cyan
 [core]
 	editor = /usr/bin/vim
+	autocrlf = input

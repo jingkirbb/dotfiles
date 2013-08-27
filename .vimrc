@@ -36,9 +36,12 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'nono/vim-handlebars'
 Bundle 'airblade/vim-gitgutter'
-Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'vim-scripts/VimClojure'
 Bundle 'kien/ctrlp.vim'
+Bundle 'ejholmes/vim-forcedotcom'
+Bundle 'kien/rainbow_parentheses'
+
+nmap <silent> <leader>s :set spell!<CR>
 
 let g:CommandTMaxFiles=100000
 
@@ -101,7 +104,7 @@ endif
 colorscheme solarized
 
 " Formatting (some of these are for coding in C and C++)
-set ts=2  " Tabs are 2 spaces
+" set ts=2  " Tabs are 2 spaces
 set bs=2  " Backspace over everything in insert mode
 set shiftwidth=2  " Tabs under smart indent
 set nocp incsearch
@@ -112,6 +115,7 @@ set cindent
 set autoindent
 set smarttab
 set expandtab
+" :set noet ci pi sts=0 sw=4 ts=4
 
 " Visual
 set showmatch  " Show matching brackets.
