@@ -1,10 +1,10 @@
 [user]
-	name = Aaron Rutkovsky
-	email = aaron.rutkovsky@gmail.com
+  name = Aaron Rutkovsky
+  email = aaron.rutkovsky@gmail.com
 [github "user"]
 
 [merge]
-  tool = gvimdiff
+  tool = vimdiff
 
 [color]
   branch = auto
@@ -27,5 +27,6 @@
   changed = green
   untracked = cyan
 [core]
-	editor = /usr/bin/vim
-	autocrlf = input
+  editor = /usr/bin/vim
+  autocrlf = input
+  excludesfile = ~/.gitignore

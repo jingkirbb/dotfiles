@@ -36,10 +36,19 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'nono/vim-handlebars'
 Bundle 'airblade/vim-gitgutter'
-Bundle 'vim-scripts/VimClojure'
 Bundle 'kien/ctrlp.vim'
 Bundle 'ejholmes/vim-forcedotcom'
-Bundle 'kien/rainbow_parentheses'
+Bundle 'guns/vim-clojure-static'
+Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'kana/vim-fakeclip'
+
+let g:rbpt_max = 16
+let g:rbpt_loadcmd_toggle = 0
+
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
 
 nmap <silent> <leader>s :set spell!<CR>
 Bundle 'wavded/vim-stylus'
