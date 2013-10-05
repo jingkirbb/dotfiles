@@ -41,6 +41,7 @@ Bundle 'ejholmes/vim-forcedotcom'
 Bundle 'guns/vim-clojure-static'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'kana/vim-fakeclip'
+Bundle 'juvenn/mustache.vim'
 
 let g:rbpt_max = 16
 let g:rbpt_loadcmd_toggle = 0
@@ -49,6 +50,8 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 
 nmap <silent> <leader>s :set spell!<CR>
 Bundle 'wavded/vim-stylus'
