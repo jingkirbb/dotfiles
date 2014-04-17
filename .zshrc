@@ -41,6 +41,7 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="$FG[129]"
 alias zshconfig="vim ~/.zshrc"
 alias rake='noglob rake'
 alias tailf='tail -f'
+[ -e /usr/local/bin/vim ] && alias vim='/usr/local/bin/vim'
 
 #------------------------------------ PATH -------------------------------------#
 PATH=/usr/local/share/npm/bin:/usr/local/bin:$PATH:$HOME/bin
