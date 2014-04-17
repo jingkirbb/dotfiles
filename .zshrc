@@ -41,6 +41,8 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="$FG[129]"
 alias zshconfig="vim ~/.zshrc"
 alias rake='noglob rake'
 alias tailf='tail -f'
+alias vm0='ssh dabramov@afraidought-vm0.corp.yahoo.com'
+alias devbox='ssh dabramov@afraidought.corp.yahoo.com'
 [ -e /usr/local/bin/vim ] && alias vim='/usr/local/bin/vim'
 
 #------------------------------------ PATH -------------------------------------#
