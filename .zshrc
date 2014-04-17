@@ -31,8 +31,8 @@ source $ZSH/oh-my-zsh.sh
 unsetopt correct
 unsetopt correct_all
 
-PROMPT='%{$fg[red]%}%m %{$fg[cyan]%}%1/%{$fg_bold[green]%} $(git_prompt_info) ࿘  %{$reset_color%}'
-ZSH_THEME_GIT_PROMPT_PREFIX="$FG[075]"
+PROMPT='%{$fg[red]%}%m %{$fg[cyan]%}%~%{$fg_bold[green]%}$(git_prompt_info) ࿘  %{$reset_color%}'
+ZSH_THEME_GIT_PROMPT_PREFIX=" $FG[075]"
 ZSH_THEME_GIT_PROMPT_SUFFIX="$FG[129]"
 
 
@@ -44,4 +44,4 @@ alias tailf='tail -f'
 [ -e /usr/local/bin/vim ] && alias vim='/usr/local/bin/vim'
 
 #------------------------------------ PATH -------------------------------------#
-PATH=/usr/local/share/npm/bin:/usr/local/bin:$PATH:$HOME/bin
+PATH=/usr/local/share/npm/bin:/usr/local/bin:$PATH
