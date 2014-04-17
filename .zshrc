@@ -28,7 +28,11 @@ source $ZSH/oh-my-zsh.sh
 unsetopt correct
 unsetopt correct_all
 
-PROMPT='%{$fg[red]%}%m %{$fg[cyan]%}%1/%{$fg_bold[green]%} $(git_prompt_info)࿘ %{$reset_color%}'
+PROMPT='%{$fg[red]%}%m %{$fg[cyan]%}%1/%{$fg_bold[green]%} $(git_prompt_info) ࿘ %{$reset_color%}'
+ZSH_THEME_GIT_PROMPT_PREFIX="$FG[075]"
+ZSH_THEME_GIT_PROMPT_SUFFIX="$FG[129]"
+
+
 
 #----------------------------------- Aliases -----------------------------------#
 alias zshconfig="vim ~/.zshrc"
