@@ -43,6 +43,7 @@ alias rake='noglob rake'
 alias tailf='tail -f'
 alias vm0='ssh dabramov@afraidought-vm0.corp.yahoo.com'
 alias devbox='ssh dabramov@afraidought.corp.yahoo.com'
+alias storm='cd ~/projects/storm'
 [ -e /usr/local/bin/vim ] && alias vim='/usr/local/bin/vim'
 
 #------------------------------------ PATH -------------------------------------#

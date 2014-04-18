@@ -7,7 +7,7 @@ let path = '~/some/path/here'
 call vundle#rc(path)
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 
 " My Bundles here:
@@ -20,13 +20,13 @@ Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdtree'
 Bundle 'topfunky/PeepOpen-EditorSupport', {'rtp': 'vim-peepopen/'}
-Bundle 'sontek/rope-vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'msanders/snipmate.vim'
 Bundle 'ervandew/supertab'
 Bundle 'nvie/vim-flake8'
 Bundle 'tomtom/tcomment_vim'
-Bundle "pangloss/vim-javascript"
+Bundle 'pangloss/vim-javascript'
+Bundle 'kien/ctrlp.vim'
 
 " vim-scripts repos
 "Bundle 'L9'
