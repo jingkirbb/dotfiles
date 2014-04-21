@@ -14,27 +14,17 @@ Bundle 'gmarik/vundle'
 "
 " original repos on github
 Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdtree'
-Bundle 'topfunky/PeepOpen-EditorSupport', {'rtp': 'vim-peepopen/'}
 Bundle 'tpope/vim-fugitive'
-Bundle 'msanders/snipmate.vim'
-Bundle 'ervandew/supertab'
-Bundle 'nvie/vim-flake8'
 Bundle 'tomtom/tcomment_vim'
-Bundle 'pangloss/vim-javascript'
 Bundle 'kien/ctrlp.vim'
-
-" vim-scripts repos
-"Bundle 'L9'
-"Bundle 'FuzzyFinder'
+Bundle 'pangloss/vim-javascript'
 
 filetype plugin indent on
 
-" Solarized color scheme
+" " Solarized color scheme
 let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
@@ -52,7 +42,7 @@ set pastetoggle=<F2>
 nmap <S-Tab> <<
 imap <S-Tab> <Esc><<i
 
-nmap <Leader>t :TagbarToggle<CR>
+" nmap <Leader>t :TagbarToggle<CR>
 nmap <Leader>n :NERDTreeToggle<CR>
 
 " Let me save files with sudo
@@ -139,7 +129,7 @@ au BufRead *.js set makeprg=jslint\ %
 " Use tab to scroll through autocomplete menus
 "autocmd VimEnter * imap <expr> <Tab> pumvisible() ? "<C-N>" : "<Tab>"
 "autocmd VimEnter * imap <expr> <S-Tab> pumvisible() ? "<C-P>" : "<S-Tab>"
-autocmd filetype javascript set sw=2 ts=2 expandtab
+autocmd filetype javascript set sw=4 ts=4 expandtab
 let g:acp_completeoptPreview=1
 
 " Mako/HTML
