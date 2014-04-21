@@ -39,6 +39,7 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="$FG[129]"
 
 #----------------------------------- Aliases -----------------------------------#
 alias zshconfig="vim ~/.zshrc"
+alias vimconfig="vim ~/.vimrc"
 alias rake='noglob rake'
 alias tailf='tail -f'
 alias vm0='ssh dabramov@afraidought-vm0.corp.yahoo.com'
