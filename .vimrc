@@ -21,6 +21,9 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'pangloss/vim-javascript'
+Bundle 'scrooloose/syntastic'
+Bundle 'juvenn/mustache.vim'
+Bundle 'airblade/vim-gitgutter'
 
 filetype plugin indent on
 
