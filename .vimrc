@@ -110,7 +110,7 @@ language en_US
 "set undofile
 
 " displays tabs with :set list & displays when a line runs off-screen
-set listchars=tab:>.,trail:.,precedes:<,extends:>
+set listchars=tab:>.,trail:~,precedes:<,extends:>
 set list
 
 """ Searching and Patterns
