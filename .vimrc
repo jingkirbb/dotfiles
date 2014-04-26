@@ -24,13 +24,16 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'scrooloose/syntastic'
 Bundle 'juvenn/mustache.vim'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'mileszs/ack.vim'
+Bundle 'nanotech/jellybeans.vim'
 
 filetype plugin indent on
 
 " " Solarized color scheme
-let g:solarized_termcolors=256
-set background=dark
-colorscheme solarized
+" let g:solarized_termcolors=256
+" set background=dark
+" colorscheme solarized
+colorscheme jellybeans
 
 " ==========================================================
 " Shortcuts
@@ -72,7 +75,7 @@ set wildmenu                  " Menu completion in command mode on <Tab>
 set wildmode=full             " <Tab> cycles between all matching choices.
 set showcmd
 
-"set colorcolumn=80
+set colorcolumn=80
 
 " don't bell or blink
 "set noerrorbells
