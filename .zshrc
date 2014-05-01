@@ -46,10 +46,9 @@ alias tailf='tail -f'
 alias vm0='ssh dabramov@afraidought-vm0.corp.yahoo.com'
 alias devbox='ssh dabramov@afraidought.corp.yahoo.com'
 alias y='cd ~/y'
-alias y/storm='y && cd storm'
-alias y/smartmail-attach='y && cd smartmail-attach'
 alias :q='exit'
 [ -e /usr/local/bin/vim ] && alias vim='/usr/local/bin/vim'
 
 #------------------------------------ PATH -------------------------------------#
 PATH=/usr/local/share/npm/bin:/usr/local/bin:$PATH
+

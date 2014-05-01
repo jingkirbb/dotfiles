@@ -3,7 +3,7 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/vundle/
-let path = '~/some/path/here'
+let path = '~/.vim_bundle'
 call vundle#rc(path)
 
 " let Vundle manage Vundle
@@ -17,7 +17,6 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-fugitive'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'pangloss/vim-javascript'
@@ -25,7 +24,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'juvenn/mustache.vim'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'mileszs/ack.vim'
-Bundle 'nanotech/jellybeans.vim'
+Bundle 'sjl/badwolf'
 
 filetype plugin indent on
 
@@ -33,7 +32,7 @@ filetype plugin indent on
 " let g:solarized_termcolors=256
 " set background=dark
 " colorscheme solarized
-colorscheme jellybeans
+colorscheme badwolf
 
 " ==========================================================
 " Shortcuts
@@ -47,6 +46,9 @@ set pastetoggle=<F2>
 "Fix Shift+Tab
 nmap <S-Tab> <<
 imap <S-Tab> <Esc><<i
+
+map ,t <Esc>:tabnew<CR>
+map ,b <Esc>:Gblame<CR>
 
 " nmap <Leader>t :TagbarToggle<CR>
 nmap <Leader>n :NERDTreeToggle<CR>
