@@ -60,7 +60,7 @@ let NERDTreeIgnore = ['\.pyc$']
 
 set tw=0
 set wm=0
-set nowrap
+set wrap
 set linebreak
 
 " ==========================================================
