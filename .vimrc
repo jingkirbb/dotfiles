@@ -49,9 +49,9 @@ imap <S-Tab> <Esc><<i
 
 map ,t <Esc>:tabnew<CR>
 map ,b <Esc>:Gblame<CR>
+map ,n :NERDTreeToggle<CR>
 
 " nmap <Leader>t :TagbarToggle<CR>
-nmap <Leader>n :NERDTreeToggle<CR>
 
 " Let me save files with sudo
 cmap w!! w !sudo tee % >/dev/null
