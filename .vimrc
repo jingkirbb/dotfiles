@@ -34,6 +34,7 @@ filetype plugin indent on
 " colorscheme solarized
 colorscheme badwolf
 
+
 " ==========================================================
 " Shortcuts
 " ==========================================================
@@ -50,6 +51,7 @@ imap <S-Tab> <Esc><<i
 map ,t <Esc>:tabnew<CR>
 map ,b <Esc>:Gblame<CR>
 map ,n :NERDTreeToggle<CR>
+map ,w <Esc>:%s/\s\+$//e<CR>
 
 " nmap <Leader>t :TagbarToggle<CR>
 
