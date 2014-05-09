@@ -25,6 +25,7 @@ Bundle 'juvenn/mustache.vim'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'mileszs/ack.vim'
 Bundle 'sjl/badwolf'
+Bundle 'kchmck/vim-coffee-script'
 
 filetype plugin indent on
 
@@ -33,6 +34,9 @@ filetype plugin indent on
 " set background=dark
 " colorscheme solarized
 colorscheme badwolf
+
+set fileformats=unix
+" e ++ff=unix
 
 
 " ==========================================================
@@ -51,7 +55,7 @@ imap <S-Tab> <Esc><<i
 map ,t <Esc>:tabnew<CR>
 map ,b <Esc>:Gblame<CR>
 map ,n :NERDTreeToggle<CR>
-map ,w <Esc>:%s/\s\+$//e<CR>
+map ,w <Esc>:%s/\s\+$//e<CR>:%s/\t/    /ge<CR>:%s/\r\+$//ge<CR>
 
 " nmap <Leader>t :TagbarToggle<CR>
 
