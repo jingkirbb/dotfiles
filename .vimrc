@@ -38,11 +38,11 @@ filetype plugin indent on
 colorscheme badwolf
 
 " rainbow parents
-au VimEnter * RainbowParenthesesToggle
-au VimEnter * RainbowParenthesesActivate
-au VimEnter * RainbowParenthesesLoadBraces
-au VimEnter * RainbowParenthesesLoadSquare
-au VimEnter * RainbowParenthesesLoadRound
+au BufEnter * RainbowParenthesesToggle
+au BufEnter * RainbowParenthesesActivate
+au BufEnter * RainbowParenthesesLoadBraces
+au BufEnter * RainbowParenthesesLoadSquare
+au BufEnter * RainbowParenthesesLoadRound
 
 set fileformats=unix
 " e ++ff=unix
