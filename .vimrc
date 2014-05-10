@@ -25,6 +25,8 @@ Bundle 'juvenn/mustache.vim'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'mileszs/ack.vim'
 Bundle 'sjl/badwolf'
+Bundle 'guns/vim-clojure-static'
+Bundle 'kien/rainbow_parentheses.vim'
 
 filetype plugin indent on
 
@@ -34,6 +36,12 @@ filetype plugin indent on
 " colorscheme solarized
 colorscheme badwolf
 
+" rainbow parents
+au VimEnter * RainbowParenthesesToggle
+au VimEnter * RainbowParenthesesActivate
+au VimEnter * RainbowParenthesesLoadBraces
+au VimEnter * RainbowParenthesesLoadSquare
+au VimEnter * RainbowParenthesesLoadRound
 
 " ==========================================================
 " Shortcuts
