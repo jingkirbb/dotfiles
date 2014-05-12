@@ -82,7 +82,8 @@ map ,t <Esc>:tabnew<CR>
 map ,b <Esc>:Gblame<CR>
 map ,n :NERDTreeToggle<CR>
 map ,w <Esc>:%s/\s\+$//e<CR>:%s/\t/    /ge<CR>:%s/\r\+$//ge<CR>
-
+map ,s <Esc>:w<CR>
+map ,q <Esc>:q<CR>
 " nmap <Leader>t :TagbarToggle<CR>
 
 " Let me save files with sudo
