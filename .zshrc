@@ -50,5 +50,5 @@ alias :q='exit'
 [ -e /usr/local/bin/vim ] && alias vim='/usr/local/bin/vim'
 
 #------------------------------------ PATH -------------------------------------#
-PATH=/usr/local/share/npm/bin:/usr/local/bin:$PATH
+PATH=~/bin:/usr/local/share/npm/bin:/usr/local/bin:$PATH
 

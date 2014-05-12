@@ -25,6 +25,9 @@ Bundle 'juvenn/mustache.vim'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'mileszs/ack.vim'
 Bundle 'sjl/badwolf'
+Bundle 'guns/vim-clojure-static'
+Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'kchmck/vim-coffee-script'
 
 filetype plugin indent on
 
@@ -33,6 +36,16 @@ filetype plugin indent on
 " set background=dark
 " colorscheme solarized
 colorscheme badwolf
+
+" rainbow parents
+au BufEnter * RainbowParenthesesToggle
+au BufEnter * RainbowParenthesesActivate
+au BufEnter * RainbowParenthesesLoadBraces
+au BufEnter * RainbowParenthesesLoadSquare
+au BufEnter * RainbowParenthesesLoadRound
+
+set fileformats=unix
+" e ++ff=unix
 
 " ==========================================================
 " Shortcuts
@@ -49,9 +62,10 @@ imap <S-Tab> <Esc><<i
 
 map ,t <Esc>:tabnew<CR>
 map ,b <Esc>:Gblame<CR>
+map ,n :NERDTreeToggle<CR>
+map ,w <Esc>:%s/\s\+$//e<CR>:%s/\t/    /ge<CR>:%s/\r\+$//ge<CR>
 
 " nmap <Leader>t :TagbarToggle<CR>
-nmap <Leader>n :NERDTreeToggle<CR>
 
 " Let me save files with sudo
 cmap w!! w !sudo tee % >/dev/null
@@ -60,7 +74,7 @@ let NERDTreeIgnore = ['\.pyc$']
 
 set tw=0
 set wm=0
-set nowrap
+set wrap
 set linebreak
 
 " ==========================================================
