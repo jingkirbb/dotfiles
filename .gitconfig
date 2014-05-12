@@ -27,6 +27,6 @@
   changed = green
   untracked = cyan
 [core]
-  editor = /usr/bin/vim
+  editor = ~/bin/vim
   autocrlf = input
   excludesfile = ~/.gitignore
