@@ -110,7 +110,7 @@ set wildmenu                  " Menu completion in command mode on <Tab>
 set wildmode=full             " <Tab> cycles between all matching choices.
 set showcmd
 
-set colorcolumn=80
+set colorcolumn=120
 
 " don't bell or blink
 "set noerrorbells
