@@ -1,4 +1,7 @@
 #!/bin/bash
 
 chsh -s /bin/zsh
-ln -sf /Users/dabramov/projects/dotfiles/.* ~
+
+for file in .*; do
+	ln -s `pwd`/$file ~/
+done
