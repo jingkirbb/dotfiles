@@ -49,6 +49,8 @@ alias y='cd ~/y'
 alias :q='exit'
 [ -e /usr/local/bin/vim ] && alias vim='/usr/local/bin/vim'
 
+alias ycuke='cucumber ~/y/ycuke/support ~/y/ycuke/step_definitions/ step_definitions/ BASE_FUNCTIONAL_PATH=`pwd`'
+
 #------------------------------------ PATH -------------------------------------#
 PATH=~/bin:/usr/local/share/npm/bin:/usr/local/bin:$PATH
 

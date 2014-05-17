@@ -54,7 +54,6 @@ let g:rbpt_colorpairs = [
     \ ['darkmagenta', 'DarkOrchid3'],
     \ ['brown',       'firebrick3'],
     \ ['gray',        'RoyalBlue3'],
-    \ ['black',       'SeaGreen3'],
     \ ['darkmagenta', 'DarkOrchid3'],
     \ ['Darkblue',    'firebrick3'],
     \ ['darkgreen',   'RoyalBlue3'],
@@ -83,7 +82,8 @@ map ,t <Esc>:tabnew<CR>
 map ,b <Esc>:Gblame<CR>
 map ,n :NERDTreeToggle<CR>
 map ,w <Esc>:%s/\s\+$//e<CR>:%s/\t/    /ge<CR>:%s/\r\+$//ge<CR>
-
+map ,s <Esc>:w<CR>
+map ,q <Esc>:q<CR>
 " nmap <Leader>t :TagbarToggle<CR>
 
 " Let me save files with sudo
@@ -110,7 +110,7 @@ set wildmenu                  " Menu completion in command mode on <Tab>
 set wildmode=full             " <Tab> cycles between all matching choices.
 set showcmd
 
-set colorcolumn=80
+set colorcolumn=120
 
 " don't bell or blink
 "set noerrorbells
@@ -146,7 +146,7 @@ set backspace=indent,eol,start
 set nobackup
 set noswapfile
 
-language en_US
+" language en_US
 
 "set undodir=~/.vim_runtime/undodir
 "set undofile
