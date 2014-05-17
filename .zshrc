@@ -1,6 +1,6 @@
-export JAVA_HOME=/home/y/libexec/java
-export ANT_HOME=/home/y/bin/ant
-export PYTHON_HOME=/home/y/bin
+# export JAVA_HOME=/home/y/libexec/java
+# export ANT_HOME=/home/y/bin/ant
+# export PYTHON_HOME=/home/y/bin
 # Path to your oh-my-zsh configuration.
 
 ZSH=$HOME/.oh-my-zsh
@@ -25,7 +25,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 #------------------------------------ RVM --------------------------------------#
-# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # export PGHOST=localhost
 unsetopt correct
@@ -52,3 +52,5 @@ alias :q='exit'
 #------------------------------------ PATH -------------------------------------#
 PATH=~/bin:/usr/local/share/npm/bin:/usr/local/bin:$PATH
 
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

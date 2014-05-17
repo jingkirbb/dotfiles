@@ -44,6 +44,25 @@ au BufEnter * RainbowParenthesesLoadBraces
 au BufEnter * RainbowParenthesesLoadSquare
 au BufEnter * RainbowParenthesesLoadRound
 
+let g:rbpt_colorpairs = [
+    \ ['brown',       'RoyalBlue3'],
+    \ ['Darkblue',    'SeaGreen3'],
+    \ ['darkgray',    'DarkOrchid3'],
+    \ ['darkgreen',   'firebrick3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['brown',       'firebrick3'],
+    \ ['gray',        'RoyalBlue3'],
+    \ ['black',       'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['red',         'firebrick3'],
+    \ ]
+
 set fileformats=unix
 " e ++ff=unix
 
@@ -101,8 +120,9 @@ set colorcolumn=80
 " don't outdent hashes
 inoremap # #
 
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
+au FileType javascript setl sw=4 sts=4 et
 set expandtab
 set smarttab
 set autoindent
