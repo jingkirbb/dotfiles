@@ -28,6 +28,7 @@ Bundle 'sjl/badwolf'
 Bundle 'guns/vim-clojure-static'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'tpope/vim-haml'
 
 filetype plugin indent on
 
@@ -222,3 +223,5 @@ endif
 if filereadable($VIRTUAL_ENV . '/.vimrc')
     source $VIRTUAL_ENV/.vimrc
 endif
+
+autocmd BufRead,BufNewFile *.hamlc setf haml
