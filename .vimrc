@@ -29,6 +29,7 @@ Bundle 'guns/vim-clojure-static'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-haml'
+Bundle 'maksimr/vim-jsbeautify'
 
 filetype plugin indent on
 
