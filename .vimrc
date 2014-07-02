@@ -88,6 +88,12 @@ map ,s <Esc>:w<CR>
 map ,q <Esc>:q<CR>
 " nmap <Leader>t :TagbarToggle<CR>
 
+autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
+" for html
+autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
+" for css or scss
+autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
+
 " Let me save files with sudo
 cmap w!! w !sudo tee % >/dev/null
 
@@ -125,6 +131,7 @@ inoremap # #
 set tabstop=2
 set shiftwidth=2
 au FileType javascript setl sw=4 sts=4 et
+au FileType coffeescript setl sw=2 sts=2 et
 set expandtab
 set smarttab
 set autoindent

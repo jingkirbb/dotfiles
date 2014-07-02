@@ -43,13 +43,18 @@ alias vimconfig="vim ~/.vimrc"
 alias la='ls -lah'
 alias rake='noglob rake'
 alias tailf='tail -f'
-alias vm0='ssh dabramov@afraidought-vm0.corp.yahoo.com'
-alias devbox='ssh dabramov@afraidought.corp.yahoo.com'
 alias y='cd ~/y'
 alias :q='exit'
+
+# Use local vim if exists
 [ -e /usr/local/bin/vim ] && alias vim='/usr/local/bin/vim'
 
+#--------------------------------- Y Specific ----------------------------------#
 alias ycuke='cucumber ~/y/ycuke/support ~/y/ycuke/step_definitions/ step_definitions/ BASE_FUNCTIONAL_PATH=`pwd`'
+alias sync_storm='unison ~/storm ssh://dahlpall.corp.ne1.yahoo.com/storm -silent'
+alias vm0='ssh dabramov@afraidought-vm0.corp.yahoo.com'
+alias devbox='ssh dabramov@afraidought.corp.yahoo.com'
+alias ostack='ssh dabramov@dahlpall.corp.ne1.yahoo.com'
 
 #------------------------------------ PATH -------------------------------------#
 PATH=~/bin:/usr/local/share/npm/bin:/usr/local/bin:$PATH
