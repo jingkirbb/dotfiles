@@ -56,8 +56,7 @@ alias vm0='ssh dabramov@afraidought-vm0.corp.yahoo.com'
 alias devbox='ssh dabramov@afraidought.corp.yahoo.com'
 alias ostack='ssh dabramov@dahlpall.corp.ne1.yahoo.com'
 
-#------------------------------------ PATH -------------------------------------#
-PATH=~/bin:/usr/local/share/npm/bin:/usr/local/bin:$PATH
-
-
+#------------------------------------ VARS -------------------------------------#
+export=~/bin:/usr/local/share/npm/bin:/usr/local/bin:$PATH
+export VIMRUNTIME=/home/dabramov/vim74/runtime
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
