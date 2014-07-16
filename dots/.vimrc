@@ -25,6 +25,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'sjl/badwolf'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'maksimr/vim-jsbeautify'
+Bundle 'einars/js-beautify'
 Bundle 'tomasr/molokai'
 
 filetype plugin indent on
