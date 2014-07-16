@@ -15,29 +15,20 @@ Bundle 'gmarik/vundle'
 " original repos on github
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'kien/ctrlp.vim'
-Bundle 'pangloss/vim-javascript'
+" Bundle 'pangloss/vim-javascript'
 Bundle 'scrooloose/syntastic'
-Bundle 'juvenn/mustache.vim'
 Bundle 'airblade/vim-gitgutter'
-Bundle 'mileszs/ack.vim'
 Bundle 'sjl/badwolf'
-Bundle 'guns/vim-clojure-static'
 Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'tpope/vim-haml'
 Bundle 'maksimr/vim-jsbeautify'
+Bundle 'tomasr/molokai'
 
 filetype plugin indent on
 
-" " Solarized color scheme
-" let g:solarized_termcolors=256
-" set background=dark
-" colorscheme solarized
-colorscheme badwolf
+colorscheme molokai
 
 " rainbow parents
 au BufEnter * RainbowParenthesesToggle
@@ -186,36 +177,5 @@ let g:acp_completeoptPreview=1
 " Mako/HTML
 autocmd BufNewFile,BufRead *.mako,*.mak,*.jinja2 setlocal ft=html
 autocmd FileType html,xhtml,xml,css setlocal expandtab shiftwidth=2 tabstop=2
-
-" Python
-"au BufRead *.py compiler nose
-au FileType python set omnifunc=pythoncomplete#Complete
-au FileType python setlocal expandtab shiftwidth=4 tabstop=4 smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class,with
-au BufRead *.py set efm=%C\ %.%#,%A\ \ File\ \"%f\"\\,\ line\ %l%.%#,%Z%[%^\ ]%\\@=%m
-au FileType python set foldmethod=indent foldlevel=99
-
-"rope options
-map <leader>j :RopeGotoDefinition<CR>
-map <leader>r :RopeRename<CR>
-
-" Don't let pyflakes use the quickfix window
-let g:pyflakes_use_quickfix = 0
-
-" Run pyflake8
-autocmd FileType python map <Leader>8 :call Flake8()<CR>
-" Run when saving py files
-autocmd BufWritePost *.py call Flake8()
-" Ignore Errors
-let g:flake8_ignore="E501,W293"
-
-" Ignore these files when completing
-set wildignore+=*.o,*.obj,.git,*.pyc
-set wildignore+=eggs/**
-set wildignore+=*.egg-info/**
-
-" Load up virtualenv's vimrc if it exists
-if filereadable($VIRTUAL_ENV . '/.vimrc')
-    source $VIRTUAL_ENV/.vimrc
-endif
 
 autocmd BufRead,BufNewFile *.hamlc setf haml
