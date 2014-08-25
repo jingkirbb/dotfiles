@@ -19,14 +19,16 @@ Bundle 'majutsushi/tagbar'
 Bundle 'dmitriiabramov/nerdtree'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'kien/ctrlp.vim'
-" Bundle 'pangloss/vim-javascript'
 Bundle 'scrooloose/syntastic'
+" Bundle 'pangloss/vim-javascript'
+" Bundle 'mxw/vim-jsx'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'sjl/badwolf'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'maksimr/vim-jsbeautify'
 Bundle 'einars/js-beautify'
 Bundle 'tomasr/molokai'
+Bundle 'wting/rust.vim'
 
 filetype plugin indent on
 
