@@ -27,6 +27,11 @@ source $ZSH/oh-my-zsh.sh
 #------------------------------------ RVM --------------------------------------#
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
+#------------------------------------ NVM --------------------------------------#
+export NVM_DIR="/Users/dabramov/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+
 # export PGHOST=localhost
 unsetopt correct
 unsetopt correct_all

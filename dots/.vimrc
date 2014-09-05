@@ -23,16 +23,21 @@ Bundle 'scrooloose/syntastic'
 " Bundle 'pangloss/vim-javascript'
 " Bundle 'mxw/vim-jsx'
 Bundle 'airblade/vim-gitgutter'
-Bundle 'sjl/badwolf'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'maksimr/vim-jsbeautify'
 Bundle 'einars/js-beautify'
 Bundle 'tomasr/molokai'
 Bundle 'wting/rust.vim'
 
+Bundle 'sjl/badwolf'
+" Bundle 'altercation/vim-colors-solarized'
+
 filetype plugin indent on
 
 colorscheme molokai
+" syntax enable
+" set background=light
+" colorscheme solarized
 
 " rainbow parents
 au BufEnter * RainbowParenthesesToggle
