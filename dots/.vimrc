@@ -86,6 +86,7 @@ map ,n :NERDTreeToggle<CR>
 map ,w <Esc>:%s/\s\+$//e<CR>:%s/\t/    /ge<CR>:%s/\r\+$//ge<CR>
 map ,s <Esc>:w<CR>
 map ,q <Esc>:q<CR>
+map ,c <Esc>:setlocal spell!<CR>
 " nmap <Leader>t :TagbarToggle<CR>
 
 autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
