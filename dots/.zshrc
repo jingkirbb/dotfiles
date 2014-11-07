@@ -25,7 +25,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 #------------------------------------ RVM --------------------------------------#
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 #------------------------------------ NVM --------------------------------------#
 export NVM_DIR="/Users/dabramov/.nvm"
@@ -62,6 +62,7 @@ alias devbox='ssh dabramov@afraidought.corp.yahoo.com'
 alias ostack='ssh dabramov@dahlpall.corp.ne1.yahoo.com'
 
 export PATH=~/bin:~/npm/bin:/usr/local/bin:$PATH
+export GOPATH=~
 #------------------------------------ VARS -------------------------------------#
 # export PATH=~/bin:/usr/local/bin:$PATH
 # /* export VIMRUNTIME=/home/dabramov/vim74/runtime */
