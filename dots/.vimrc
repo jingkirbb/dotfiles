@@ -22,16 +22,24 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'fatih/vim-go'
 " Bundle 'pangloss/vim-javascript'
 Bundle 'scrooloose/syntastic'
+" Bundle 'mxw/vim-jsx'
 Bundle 'airblade/vim-gitgutter'
-Bundle 'sjl/badwolf'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'maksimr/vim-jsbeautify'
 Bundle 'einars/js-beautify'
 Bundle 'tomasr/molokai'
+Bundle 'wting/rust.vim'
+Bundle 'fatih/vim-go'
+
+" Bundle 'sjl/badwolf'
+Bundle 'altercation/vim-colors-solarized'
 
 filetype plugin indent on
 
 colorscheme molokai
+" syntax enable
+" set background=light
+" colorscheme solarized
 
 " rainbow parents
 au BufEnter * RainbowParenthesesToggle
@@ -80,6 +88,7 @@ map ,n :NERDTreeToggle<CR>
 map ,w <Esc>:%s/\s\+$//e<CR>:%s/\t/    /ge<CR>:%s/\r\+$//ge<CR>
 map ,s <Esc>:w<CR>
 map ,q <Esc>:q<CR>
+map ,c <Esc>:setlocal spell!<CR>
 " nmap <Leader>t :TagbarToggle<CR>
 
 autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
@@ -106,7 +115,7 @@ filetype on                   " try to detect filetypes
 filetype plugin indent on     " enable loading indent file for filetype
 set number                    " Display line numbers
 set numberwidth=1             " using only 1 column (and 1 space) while possible
-set background=dark           " We are using dark background in vim
+set background=light           " We are using dark background in vim
 set title                     " show title in console title bar
 set wildmenu                  " Menu completion in command mode on <Tab>
 set wildmode=full             " <Tab> cycles between all matching choices.
@@ -158,6 +167,9 @@ set noswapfile
 set listchars=tab:>.,trail:~,precedes:<,extends:>
 set list
 au FileType go set nolist
+
+" GO STUFF
+autocmd FileType go setlocal nolist
 
 """ Searching and Patterns
 set ignorecase              " Default to using case insensitive searches,
