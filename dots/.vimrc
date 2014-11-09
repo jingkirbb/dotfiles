@@ -157,6 +157,7 @@ set noswapfile
 " displays tabs with :set list & displays when a line runs off-screen
 set listchars=tab:>.,trail:~,precedes:<,extends:>
 set list
+au FileType go set nolist
 
 """ Searching and Patterns
 set ignorecase              " Default to using case insensitive searches,

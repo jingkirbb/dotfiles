@@ -58,5 +58,5 @@ alias ostack='ssh dabramov@dahlpall.corp.ne1.yahoo.com'
 
 #------------------------------------ VARS -------------------------------------#
 export PATH=~/bin:/usr/local/share/npm/bin:/usr/local/bin:$PATH
-/* export VIMRUNTIME=/home/dabramov/vim74/runtime */
+export GOPATH=~
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
