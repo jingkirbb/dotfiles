@@ -67,3 +67,7 @@ export GOPATH=~
 # export PATH=~/bin:/usr/local/bin:$PATH
 # /* export VIMRUNTIME=/home/dabramov/vim74/runtime */
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+export DOCKER_CERT_PATH=/Users/dabramov/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+export DOCKER_HOST=tcp://192.168.59.103:2376

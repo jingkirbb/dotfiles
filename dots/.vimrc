@@ -19,11 +19,11 @@ Bundle 'majutsushi/tagbar'
 Bundle 'dmitriiabramov/nerdtree'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'kien/ctrlp.vim'
-Bundle 'scrooloose/syntastic'
-" Bundle 'pangloss/vim-javascript'
-" Bundle 'mxw/vim-jsx'
+" Bundle 'scrooloose/syntastic'
+Bundle 'pangloss/vim-javascript'
+Bundle 'mxw/vim-jsx'
 Bundle 'airblade/vim-gitgutter'
-Bundle 'kien/rainbow_parentheses.vim'
+" Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'maksimr/vim-jsbeautify'
 Bundle 'einars/js-beautify'
 Bundle 'tomasr/molokai'
@@ -41,29 +41,29 @@ colorscheme molokai
 " colorscheme solarized
 
 " rainbow parents
-au BufEnter * RainbowParenthesesToggle
-au BufEnter * RainbowParenthesesActivate
-au BufEnter * RainbowParenthesesLoadBraces
-au BufEnter * RainbowParenthesesLoadSquare
-au BufEnter * RainbowParenthesesLoadRound
-
-let g:rbpt_colorpairs = [
-    \ ['brown',       'RoyalBlue3'],
-    \ ['Darkblue',    'SeaGreen3'],
-    \ ['darkgray',    'DarkOrchid3'],
-    \ ['darkgreen',   'firebrick3'],
-    \ ['darkcyan',    'RoyalBlue3'],
-    \ ['darkred',     'SeaGreen3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['brown',       'firebrick3'],
-    \ ['gray',        'RoyalBlue3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['Darkblue',    'firebrick3'],
-    \ ['darkgreen',   'RoyalBlue3'],
-    \ ['darkcyan',    'SeaGreen3'],
-    \ ['darkred',     'DarkOrchid3'],
-    \ ['red',         'firebrick3'],
-    \ ]
+" au BufEnter * RainbowParenthesesToggle
+" au BufEnter * RainbowParenthesesActivate
+" au BufEnter * RainbowParenthesesLoadBraces
+" au BufEnter * RainbowParenthesesLoadSquare
+" au BufEnter * RainbowParenthesesLoadRound
+"
+" let g:rbpt_colorpairs = [
+"     \ ['brown',       'RoyalBlue3'],
+"     \ ['Darkblue',    'SeaGreen3'],
+"     \ ['darkgray',    'DarkOrchid3'],
+"     \ ['darkgreen',   'firebrick3'],
+"     \ ['darkcyan',    'RoyalBlue3'],
+"     \ ['darkred',     'SeaGreen3'],
+"     \ ['darkmagenta', 'DarkOrchid3'],
+"     \ ['brown',       'firebrick3'],
+"     \ ['gray',        'RoyalBlue3'],
+"     \ ['darkmagenta', 'DarkOrchid3'],
+"     \ ['Darkblue',    'firebrick3'],
+"     \ ['darkgreen',   'RoyalBlue3'],
+"     \ ['darkcyan',    'SeaGreen3'],
+"     \ ['darkred',     'DarkOrchid3'],
+"     \ ['red',         'firebrick3'],
+"     \ ]
 
 set fileformats=unix
 " e ++ff=unix
@@ -99,7 +99,7 @@ autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
 " Let me save files with sudo
 cmap w!! w !sudo tee % >/dev/null
 
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = []
 
 set tw=0
 set wm=0
@@ -132,8 +132,9 @@ inoremap # #
 
 set tabstop=2
 set shiftwidth=2
-au FileType javascript setl sw=4 sts=4 et
-au FileType coffeescript setl sw=2 sts=2 et
+setl sw=4 sts=4 et
+" au FileType javascript setl sw=4 sts=4 et
+" au FileType coffeescript setl sw=2 sts=2 et
 set expandtab
 set smarttab
 set autoindent
@@ -193,3 +194,5 @@ autocmd BufNewFile,BufRead *.mako,*.mak,*.jinja2 setlocal ft=html
 autocmd FileType html,xhtml,xml,css setlocal expandtab shiftwidth=2 tabstop=2
 
 autocmd BufRead,BufNewFile *.hamlc setf haml
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*
