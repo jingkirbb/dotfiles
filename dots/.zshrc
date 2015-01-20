@@ -64,8 +64,8 @@ alias ostack='ssh dabramov@dahlpall.corp.ne1.yahoo.com'
 export PATH=~/bin:~/npm/bin:/usr/local/bin:$PATH
 export GOPATH=~
 #------------------------------------ VARS -------------------------------------#
-# export PATH=~/bin:/usr/local/bin:$PATH
-# /* export VIMRUNTIME=/home/dabramov/vim74/runtime */
+export PATH=~/bin:/usr/local/share/npm/bin:/usr/local/bin:$PATH
+export GOPATH=~
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 export DOCKER_CERT_PATH=/Users/dabramov/.boot2docker/certs/boot2docker-vm

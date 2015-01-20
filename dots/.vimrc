@@ -22,6 +22,8 @@ Bundle 'kien/ctrlp.vim'
 " Bundle 'scrooloose/syntastic'
 Bundle 'pangloss/vim-javascript'
 Bundle 'mxw/vim-jsx'
+Bundle 'fatih/vim-go'
+" Bundle 'scrooloose/syntastic'
 Bundle 'airblade/vim-gitgutter'
 " Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'maksimr/vim-jsbeautify'
@@ -166,6 +168,7 @@ set noswapfile
 " displays tabs with :set list & displays when a line runs off-screen
 set listchars=tab:>.,trail:~,precedes:<,extends:>
 set list
+au FileType go set nolist
 
 " GO STUFF
 autocmd FileType go setlocal nolist
