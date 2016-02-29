@@ -24,14 +24,6 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-#------------------------------------ RVM --------------------------------------#
-# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-#------------------------------------ NVM --------------------------------------#
-export NVM_DIR="/Users/dabramov/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-
 # export PGHOST=localhost
 unsetopt correct
 unsetopt correct_all
@@ -40,34 +32,9 @@ PROMPT='%{$fg[red]%}%m %{$fg[cyan]%}%~%{$fg_bold[green]%}$(git_prompt_info) ࿘ 
 ZSH_THEME_GIT_PROMPT_PREFIX=" $FG[075]"
 ZSH_THEME_GIT_PROMPT_SUFFIX="$FG[129]"
 
-
-
 #----------------------------------- Aliases -----------------------------------#
 alias zshconfig="vim ~/.zshrc"
 alias vimconfig="vim ~/.vimrc"
 alias la='ls -lah'
-alias rake='noglob rake'
 alias tailf='tail -f'
-alias y='cd ~/y'
 alias :q='exit'
-
-# Use local vim if exists
-[ -e /usr/local/bin/vim ] && alias vim='/usr/local/bin/vim'
-
-#--------------------------------- Y Specific ----------------------------------#
-alias ycuke='cucumber ~/y/ycuke/support ~/y/ycuke/step_definitions/ step_definitions/ BASE_FUNCTIONAL_PATH=`pwd`'
-alias sync_storm='unison ~/storm ssh://dahlpall.corp.ne1.yahoo.com/storm -silent'
-alias vm0='ssh dabramov@afraidought-vm0.corp.yahoo.com'
-alias devbox='ssh dabramov@afraidought.corp.yahoo.com'
-alias ostack='ssh dabramov@dahlpall.corp.ne1.yahoo.com'
-
-export PATH=~/bin:~/npm/bin:/usr/local/bin:$PATH
-export GOPATH=~
-#------------------------------------ VARS -------------------------------------#
-export PATH=~/bin:/usr/local/share/npm/bin:/usr/local/bin:$PATH
-export GOPATH=~
-# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-export DOCKER_CERT_PATH=/Users/dabramov/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
-export DOCKER_HOST=tcp://192.168.59.103:2376
