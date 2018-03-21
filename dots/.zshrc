@@ -24,10 +24,6 @@ plugins=(git, mercurial)
 
 source $ZSH/oh-my-zsh.sh
 
-# export PGHOST=localhost
-unsetopt correct
-unsetopt correct_all
-
 PROMPT='%{$fg[red]%}%m %{$fg[cyan]%}%~%{$fg_bold[green]%}$(git_prompt_info) ࿘  %{$reset_color%}'
 ZSH_THEME_GIT_PROMPT_PREFIX=" $FG[075]"
 ZSH_THEME_GIT_PROMPT_SUFFIX="$FG[129]"
@@ -229,5 +225,3 @@ alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commi
 
 export NVM_DIR="/Users/dabramov/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
